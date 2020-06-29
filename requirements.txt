@@ -1,5 +1,6 @@
 ahkab==0.18
 altgraph==0.16.1
+appdirs==1.4.4
 astroid==2.4.2
 auto-py-to-exe==2.6.6
 bottle==0.12.18
@@ -9,14 +10,17 @@ click==7.1.2
 colorama==0.4.3
 cs50==5.0.4
 cycler==0.10.0
+distlib==0.3.1
 Eel==0.11.0
 Equation==1.2.1
+filelock==3.0.12
 Flask==1.1.2
 future==0.18.2
 gevent==1.4.0
 gevent-websocket==0.10.1
 greenlet==0.4.15
 gunicorn==20.0.4
+importlib-metadata==1.7.0
 isort==4.3.21
 itsdangerous==1.1.0
 Jinja2==2.11.2
@@ -52,6 +56,8 @@ toml==0.10.1
 tqdm==4.46.1
 typed-ast==1.4.1
 unicode==2.7
+virtualenv==20.0.25
 Werkzeug==1.0.1
 whichcraft==0.6.1
 wrapt==1.12.1
+zipp==3.1.0
