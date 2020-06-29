@@ -1,0 +1,218 @@
+body {
+    background-color: whitesmoke;
+    margin : 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.Calculator {
+    border:2px solid black;
+    border-radius: 10px;
+    background-color: rgb(12, 18, 51);
+    width:400px;
+    height:520px;
+    padding:15px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    align-content: center;
+    box-shadow: 0px 7px 5px blue;
+}
+
+.Screen{
+    border: 2px solid white;
+    background-color: rgb(98, 134, 26);
+    margin-bottom:15px;
+    width:388px;
+    height: 95px;
+    border-radius: 10px;
+    align-content:center;
+    padding:3px;
+}
+
+#equation{
+    border:none;
+    background-color:transparent;
+    margin: 1px;
+    height:40px;
+    width:100%;
+    text-align:left;
+    margin-bottom:10px;
+    font: 25pt sans-serif;
+    outline:none;
+}
+
+#result{
+    border:none;
+    background-color:transparent;
+    margin: 1px;
+    height:40px;
+    text-align:right;
+    font: 25pt sans-serif;
+}
+
+.Buttons{
+    border: 1px solid rgb(22, 36, 117);
+    border-radius: 10px;
+    width: 378px;
+    height: 378px;
+    padding :10px;
+    display:flex;
+    flex-wrap:wrap;
+    float:right;
+}
+
+button {
+    font: bold 18pt monospace;
+    border-radius: 10px;
+    border:2px solid white;
+    margin:10px;
+    width:55.6px;
+    height:55.6px;
+
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 5px 2px rgb(80, 80, 224);
+    outline:none; 
+}
+button:hover{
+    background-color:rgb(200,200,200);
+}
+
+button:active {
+    background-color: rgb(200,200,200);
+    box-shadow: 0 2px 2px rgb(80, 80, 224);
+    transform: translateY(4px);
+  }
+
+.sign1{
+    position: absolute;
+    left:25px;
+    top:0px;
+    animation: motion1 2s;
+  }
+.sign2{
+    position: absolute;
+    left:285px;
+    top:120px;
+    animation: motion2 2s;
+}
+.sign3{
+    position: absolute;
+    left:35px;
+    top:250px;
+    animation: motion5 2s;
+}
+.sign4{
+    position: absolute;
+    left:280px;
+    top:500px;
+    animation: motion3 2s;
+    
+}
+.sign5{
+    position: absolute;
+    left:300px;
+    top:330px;
+    animation: motion6 2s;
+}
+.sign6{
+    position: absolute;
+    left:80px;
+    top:580px;
+    animation: motion1 2s;
+}
+.sign7{
+    position: absolute;
+    right:25px;
+    top:70px;
+    animation: motion3 2s;
+}
+.sign8{
+    position: absolute;
+    right:240px;
+    top:40px;
+    animation: motion6 2s;
+}
+.sign9{
+    position: absolute;
+    right:50px;
+    top:180px;
+    
+    animation: motion4 2s;
+}
+.sign10{
+    position: absolute;
+    right:45px;
+    top:450px;
+    animation: motion2 2s;
+}
+.sign11{
+    position: absolute;
+    right:225px;
+    top:450px;
+    animation: motion4 2s;
+}
+.sign12{
+    position: absolute;
+    right:325px;
+    top:350px;
+    animation: motion5 2s;
+}
+
+
+  @keyframes motion1 {
+    from {
+      transform: rotate(359deg) ;
+      left:500px;
+    }
+    to {
+      transform: rotate(0deg) ;
+    }
+  }
+  @keyframes motion2 {
+    from {
+        transform: rotate(359deg) ;
+        top:10px;
+      }
+      to {
+        transform: rotate(0deg) ;
+      }
+  }
+  @keyframes motion3 {
+    from {
+        transform: rotate(359deg) ;
+        top:500px;
+      }
+      to {
+        transform: rotate(0deg) ;
+      }
+  }
+  @keyframes motion4 {
+    from {
+        transform: rotate(359deg) ;
+        right:550px;
+      }
+      to {
+        transform: rotate(0deg) ;
+      }
+  }
+  @keyframes motion5 {
+    from {
+        transform: rotate(359deg) translateX(-200px);
+      }
+      to {
+        transform: rotate(0deg) translateX(0px) ;
+      }
+  }
+  @keyframes motion6 {
+    from {
+        transform: rotate(359deg) translateX(200px);
+      }
+      to {
+        transform: rotate(0deg) translateX(0px) ;
+      }
+  }

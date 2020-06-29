@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-512/calculator-716-461701.png">
+    <link rel="stylesheet" href="/static/style.css">
+    <script type="text/javascript" src="/static/java.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div>
+        <img src="/static/images/1.png" class="sign1" >
+        <img src="/static/images/2.png" class="sign2" >
+        <img src="/static/images/3.png" class="sign3" >
+        <img src="/static/images/4.png" class="sign4" >
+        <img src="/static/images/5.png" class="sign5" >
+        <img src="/static/images/6.png" class="sign6" >
+        <img src="/static/images/7.png" class="sign7" >
+        <img src="/static/images/8.png" class="sign8" >
+        <img src="/static/images/9.png" class="sign9" >
+        <img src="/static/images/10.png" class="sign10" >
+        <img src="/static/images/11.png" class="sign11" >
+        <img src="/static/images/12.png" class="sign12" >
+
+    </div>
+    
+    <div class="Calculator">
+        <form>
+            <div class="Screen">
+                <div >
+                    <input type="text" id="equation" name="equation" maxlength="50">
+                </div>
+                <div id="result">
+                    {{answer}}
+                </div>
+            </div>
+            <div class="Buttons">
+
+                <button type="button" id = "cos" name="cos" value="cos(" onclick="writebutton(value)">
+                    cos
+                </button>
+                <button type="button" id = "sin" name="sin" value="sin(" onclick="writebutton(value)">
+                    sin
+                </button>
+                <button type="button" id = "tan" name="tan" value="tan(" onclick="writebutton(value)">
+                    tan
+                </button>
+                <button type="button" id = "log" name="log" value="log(" onclick="writebutton(value)" >
+                    log
+                </button>
+                <button type="button" id = "exp" name="exp" value="^" onclick="writebutton(value)">
+                    ^
+                </button>
+                <button type="button" id = "nine" name="nine" value="9" onclick="writebutton(value)">
+                    9
+                </button>
+                <button type="button" id = "eight" name="eight" value="8" onclick="writebutton(value)">
+                    8
+                </button>
+                <button type="button" id = "seven" name="seven" value="7" onclick="writebutton(value)">
+                    7
+                </button>
+                <button type="button" id = "plus" name="plus" value="+" onclick="writebutton(value)" >
+                    +
+                </button>
+                <button type="button" id = "lbracket" name="lbracket" value="(" onclick="writebutton(value)">
+                    (
+                </button>
+                <button type="button" id = "six" name="six" value="6" onclick="writebutton(value)">
+                    6
+                </button>
+                <button type="button" id = "five" name="five" value="5" onclick="writebutton(value)">
+                    5
+                </button>
+                <button type="button" id = "four" name="four" value="4" onclick="writebutton(value)">
+                    4
+                </button>
+                <button type="button" id = "minus" name="minus" value="-" onclick="writebutton(value)">
+                    -
+                </button>
+                <button type="button" id = "rbracket" name="rbracket" value=")" onclick="writebutton(value)">
+                    )
+                </button>
+                <button type="button" id = "three" name="three" value="3" onclick="writebutton(value)">
+                    3
+                </button>
+                <button type="button" id = "two" name="two" value="2" onclick="writebutton(value)">
+                    2
+                </button>
+                 <button type="button" id = "one" name="one" value="1" onclick="writebutton(value)"> 
+                    1
+                </button>
+                <button type="button" id = "mpy" name="mpy" value="*" onclick="writebutton(value)">
+                    *
+                </button>
+                <button type="button" id = "del" name="del" onclick="delettt()">
+                    del
+                </button>
+                <button type="button" id = "dot" name="dot" value="." onclick="writebutton(value)"> 
+                    .
+                 </button>
+                 <button type="button" id = "zero" name="zero" value="0" onclick="writebutton(value)">
+                     0
+                 </button>
+                 <button type="submit" id = "equal" name="equal" value="=">
+                     =
+                 </button>    
+                 <button type="button" id = "dvd" name="dvd" value="/" onclick="writebutton(value)">
+                     /
+                 </button>
+                <button type="button" id = "ac" name="ac" value="3" onclick="reset()">
+                    AC
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
