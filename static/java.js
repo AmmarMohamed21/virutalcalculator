@@ -4,7 +4,7 @@ function writebutton(value) {
         document.getElementById("equation").value = document.getElementById("equation").value + value ;
     }
 }
-function delettt()
+function delet()
 {
     var len = document.getElementById("equation").value.length;
     var curequation = document.getElementById("equation").value;
