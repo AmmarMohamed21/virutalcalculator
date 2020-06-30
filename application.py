@@ -14,7 +14,16 @@ def after_request(response):
     response.headers["Pragma"] = "no-cache"
     return response
 
+def multiplydivide(n): 
+    SSTranslation = str.maketrans("×÷","*/")
+    n=n.translate(SSTranslation)
+    return n
+
 def Calculate(expr):
+    n = len(expr)
+    for i in range(n-1):
+        if expr[i] == "×" or expr[i] == "÷":
+            expr = expr[0:i] + multiplydivide(expr[i]) + expr[i+1:n]
     return round(nsimplify(expand(expr)),5)
 
 
