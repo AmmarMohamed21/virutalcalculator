@@ -24,7 +24,10 @@ def index():
         answer=""
     else:
         equation = request.args.get("equation")
-        answer = Calculate(equation)
+        try:
+            answer = Calculate(equation)
+        except:
+            answer = "Error"
     return render_template("index.html",answer=answer)
 
 
