@@ -22,9 +22,12 @@ def multiplydivide(n):
 def Calculate(expr):
     n = len(expr)
     for i in range(n-1):
-        if expr[i] == "×" or expr[i] == "÷":
+        value = i > 0 and (expr[i-1].isdigit() or expr[i-1] == ")") and (expr[i] == "c" or expr[i] == "s" or expr[i] == "t" or expr[i] == "l" or expr[i] == "(")
+        if value:
+            expr = expr[0:i] +"*"+expr[i:n]
+        elif expr[i] == "×" or expr[i] == "÷":
             expr = expr[0:i] + multiplydivide(expr[i]) + expr[i+1:n]
-    return round(nsimplify(expand(expr)),5)
+    return round(nsimplify(expand(expr)),6)
 
 
 @app.route("/")
