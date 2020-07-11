@@ -27,7 +27,7 @@ def Calculate(expr):
             expr = expr[0:i] +"*"+expr[i:n]
         elif expr[i] == "×" or expr[i] == "÷":
             expr = expr[0:i] + multiplydivide(expr[i]) + expr[i+1:n]
-    return nsimplify(round(expand(expr),6))
+    return round(nsimplify(expand(expr)),6)
 
 
 @app.route("/")
